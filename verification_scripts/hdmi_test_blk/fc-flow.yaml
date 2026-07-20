@@ -1,0 +1,33 @@
+version: 1
+id: 76e27cf8-2022-46a6-bb11-8577cfd98a3a
+project: hdmi_test_blk
+coverage_jasper_hdmi_test_blk:
+  script: ../../verification_scripts_hdmi_test_blk/script_builder.json
+  formal-tool: jasper_gold
+  run:
+    flow: coverage
+    time-limit: 48h
+elaboration_jasper_hdmi_test_blk:
+  script: ../../verification_scripts_hdmi_test_blk/script_builder.json
+  formal-tool: jasper_gold
+  run:
+    flow: elaboration
+    time-limit: 1h
+elaboration_onespin_hdmi_test_blk:
+  script: ../../verification_scripts_hdmi_test_blk/script_builder.json
+  formal-tool: onespin
+  run:
+    flow: elaboration
+    time-limit: 1h
+elaboration_vcf_hdmi_test_blk:
+  script: ../../verification_scripts_hdmi_test_blk/script_builder.json
+  formal-tool: vcf
+  run:
+    flow: elaboration
+    time-limit: 1h
+regression_jasper_hdmi_test_blk:
+  script: ../../verification_scripts_hdmi_test_blk/script_builder.json
+  formal-tool: jasper_gold
+  run:
+    flow: regression
+    time-limit: 24h
