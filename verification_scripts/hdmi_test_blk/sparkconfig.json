@@ -1,0 +1,32 @@
+{
+    "directories": [
+        "../../src"
+    ],
+    "files": [
+        "../../src/audio_clock_regeneration_packet.sv",
+        "../../src/audio_sample_packet.sv",
+        "../../src/auxiliary_video_information_info_frame.sv",
+        "../../src/source_product_description_info_frame.sv",
+        "../../src/audio_info_frame.sv",
+        "../../src/packet_picker.sv",
+        "../../src/packet_assembler.sv",
+        "../../src/tmds_channel.sv",
+        "../../src/serializer.sv",
+        "../../src/hdmi.sv"
+    ],
+    "top": "hdmi",
+    "defines": [],
+    "include_dirs": [],
+    "hierarchy": [
+        {
+            "aips": [],
+            "dependency": [],
+            "directory": "../../properties/hdmi_test_blk",
+            "hierarchy": [],
+            "internal_signals": [],
+            "name": "fv_hdmi_test_blk",
+            "type": "module"
+        }
+    ],
+    "aip_common_directory": "../../aips/hdmi_test_blk"
+}
